@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: #20c997;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+label,
+input {
+  display: block;
+  margin: 0.8rem;
+  font-size: 1.8rem;
+}
+
+input {
+  height: 7rem;
+  width: 50rem;
+}
+
+.encrypt,
+.decrypt,
+.copy {
+  font-weight: 700;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  background: #087f5b;
+  color: #e6fcf5;
+}
+
+.encrypt:hover,
+.decrypt:hover,
+.copy:hover {
+  background-color: #2b8a3e;
+}
+
+.encrypt,
+.decrypt,
+.btn-copy {
+  padding: 0.5rem 1rem;
+  width: 24rem;
+}
+
+.message,
+.key,
+.result-message {
+  background-color: #e6fcf5;
+  padding-top: 0;
+}
