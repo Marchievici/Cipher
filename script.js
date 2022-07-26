@@ -33,7 +33,7 @@ const decryptOrEncryptMessage = function (message, secretKey, operator) {
     key += key;
   }
 
-  const result = msg.split("").reduce((word, _currLetter, currInd) => {
+  elemResult.value = msg.split("").reduce((word, _currLetter, currInd) => {
     let index_sum =
       operator === "+"
         ? characters.findIndex((elem) => elem === msg[currInd]) +
@@ -48,5 +48,4 @@ const decryptOrEncryptMessage = function (message, secretKey, operator) {
     const index = index_sum % characters.length;
     return (word += characters[index]);
   }, "");
-  elemResult.value = result;
 };
